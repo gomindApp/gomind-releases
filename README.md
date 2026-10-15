@@ -1,69 +1,82 @@
 # GoMind Releases
 
-Official release artifacts for [GoMind](https://gomind.app), including installers, portable packages, and platform builds when they are available.
+Official release artifacts for [GoMind](https://gomind.app): installers, portable packages, and platform builds when available.
 
-## GoMind 是什么？
+<p align="center">
+  <a href="https://gomind.app/assets/screenshot1.png"><img src="https://gomind.app/assets/screenshot1.png" alt="GoMind mind map workspace" width="49%"></a>
+  <a href="https://gomind.app/assets/screenshot-v2.6.0-pic-shows-gomind-app-ai-withtext.png"><img src="https://gomind.app/assets/screenshot-v2.6.0-pic-shows-gomind-app-ai-withtext.png" alt="GoMind mind map with AI assistant" width="49%"></a>
+</p>
 
-GoMind 是一个跨平台的可视化思维工作台。它把思维导图、知识整理、富文本笔记和内容导出放在同一个可编辑空间中，适合整理想法、学习资料、研究内容、会议记录、产品规划和工作流程。
+<p align="center"><em>Think visually. Organize clearly. Build something useful.</em></p>
 
-GoMind 的核心特点：
+<p align="center">
+  <a href="https://gomind.app">Website</a> ·
+  <a href="https://gomind.app/download.html">Download</a> ·
+  <a href="https://gomind.app/app/">Web App</a> ·
+  <a href="https://github.com/gomindApp/gomind-releases/releases">Releases</a> ·
+  <a href="https://gomind.app/user-guide/en/">User Guide</a>
+</p>
 
-- 用节点和多种布局组织复杂信息；
-- 在节点中添加 Markdown、HTML、代码、Mermaid、LaTeX、图片和链接；
-- 导入 XMind、FreeMind、Markdown、YAML、OPML 和纯文本；
-- 导出 PNG、JPG、SVG、PDF、Markdown 和 OPML；
-- 支持 Windows、macOS、Linux、iOS、Android 和 Web；
-- 可选连接本机 AI / MCP，让兼容的 AI 工具读取和整理当前导图。
+## What is GoMind?
 
-## 如何使用发布版本
+GoMind is a cross-platform visual workspace for mind mapping and knowledge organization. It combines an editable canvas, rich node content, multiple layouts, import/export workflows, and optional local AI/MCP integrations.
 
-1. 打开 [Releases](https://github.com/gomindApp/gomind-releases/releases) 页面。
-2. 选择需要的版本。标记为 **Latest** 的版本是当前推荐的稳定版本。
-3. 在该版本的 **Assets** 中选择与你的平台和用途匹配的文件。
-4. Windows 普通用户优先选择 Installer；需要免安装运行时选择 Portable ZIP（如果该版本提供）。
-5. 下载后按照发布说明安装或解压运行。
+Use it to turn rough ideas, notes, research, meeting material, study plans, and product requirements into a structure that stays visual, editable, and easy to review.
 
-也可以直接访问：
+## Highlights
 
-- [GoMind 官网](https://gomind.app)
-- [下载页面](https://gomind.app/download.html)
-- [在线应用](https://gomind.app/app/)
-- [用户指南](https://gomind.app/user-guide/en/)
-- [中文用户指南](https://gomind.app/user-guide/zh-CN/)
+- **Visual thinking:** build node trees, relationships, boundaries, summaries, links, markers, and multiple pages.
+- **Flexible layouts:** switch between mind map, timeline, table, fishbone, organization chart, radial, freeform, and other layouts.
+- **Rich node content:** write Markdown, HTML, code, Mermaid diagrams, LaTeX formulas, and image-based notes.
+- **Import and export:** work with XMind, FreeMind, Markdown, YAML, OPML, plain text, PNG, JPG, SVG, PDF, and more.
+- **AI-assisted workflows:** optionally connect a compatible local AI client through GoMind MCP.
+- **Cross-platform:** Windows, macOS, Linux, iOS, Android, and Web.
 
-## 发布文件说明
+## Download and install
 
-每个版本只展示实际上传并可用的文件。某个平台或格式没有提供时，不会放置指向其他文件的虚假下载链接。
+1. Open the [Releases](https://github.com/gomindApp/gomind-releases/releases) page.
+2. Select the version marked **Latest** for the current recommended stable release.
+3. Choose an asset that matches your platform and use case.
+4. On Windows, choose **Installer** for normal installation. Choose **Portable ZIP** only when it is present in that release.
+5. Follow the release notes for installation, upgrade, or portable use.
 
-| 类型 | 适用场景 |
+The download page only links to artifacts that are actually available. A missing platform or format is not represented by a placeholder or a link to a different file.
+
+### Artifact guide
+
+| Artifact | Recommended use |
 | --- | --- |
-| Installer | Windows 普通安装，适合大多数用户 |
-| Portable ZIP | Windows 免安装运行；仅在版本明确提供时使用 |
-| macOS / Linux / Mobile builds | 对应平台的安装包或构建产物；以版本 Assets 为准 |
-| Checksums | 用于核对下载文件完整性；仅在版本提供校验文件时使用 |
-| Cloudflare R2 mirror | 可选镜像；只有镜像实际可用时才会出现在下载页 |
+| Installer | Standard Windows installation for most users |
+| Portable ZIP | Windows use without installation; published only when available |
+| macOS / Linux / mobile builds | Platform-specific packages when included in the release |
+| Checksums | Verify file integrity when a checksum file is provided |
+| R2 mirror | Optional mirror, shown only when the mirror is reachable and current |
 
-MSIX 或其他签名相关格式只有在能够提供对应构建和签名时才会发布。没有提供的格式不会被标记为可下载。
+Unsigned or unavailable formats, including an unsigned MSIX package, are not presented as downloadable releases.
 
-## 版本与下载页
+## Verify a download
 
-- GitHub Releases 是本仓库的版本文件来源。
-- 官网下载页展示当前可用的安装文件和镜像状态。
-- “Latest” 只表示当前推荐版本，不代表所有平台和格式都一定存在。
-- 版本说明、文件名、大小和 SHA-256 以对应 Release 的实际内容为准。
+Download only from the [GoMind website](https://gomind.app) or this repository's GitHub Releases. When a release provides SHA-256 values, compare the downloaded file with the published checksum before running it.
 
-## 安全与完整性
+The release page is the source of truth for the version, filename, file size, checksum, and availability of each artifact.
 
-只从 GoMind 官网或本仓库的 GitHub Releases 下载。下载后如 Release 提供 SHA-256 校验值，请核对文件摘要；如果文件名、大小或摘要与 Release 信息不一致，请不要运行，并通过项目渠道反馈。
+## Documentation
 
-## English
+- [Product website](https://gomind.app)
+- [Download page](https://gomind.app/download.html)
+- [Web App](https://gomind.app/app/)
+- [English user guide](https://gomind.app/user-guide/en/)
+- [Chinese user guide](https://gomind.app/user-guide/zh-CN/)
+- [AI / MCP guide](https://gomind.app/mcp.html)
 
-GoMind is a cross-platform visual workspace for mind mapping and knowledge organization. It combines an editable canvas, rich node notes, import/export workflows, and optional local AI/MCP integrations.
+## 中文简介
 
-Use the [GitHub Releases](https://github.com/gomindApp/gomind-releases/releases) page to choose a version and download an artifact from that release. Windows users should normally choose the Installer; choose Portable ZIP only when it is present. Other platforms and formats are published only when the corresponding artifact is available.
+GoMind 是一个跨平台的可视化思维工作台，用于创建思维导图、整理知识、编写富文本笔记和导出内容。它适合学习、研究、会议记录、产品规划和工作流程整理。
 
-For product information and documentation, visit the [GoMind website](https://gomind.app), the [download page](https://gomind.app/download.html), or the [user guide](https://gomind.app/user-guide/en/).
+普通用户请从 [Releases](https://github.com/gomindApp/gomind-releases/releases) 选择版本：Windows 优先使用 **Installer**；只有版本实际提供 **Portable ZIP** 时才使用免安装包。官网和下载页只展示实际可用的文件，不提供虚假或替代链接。
+
+GoMind 支持 Windows、macOS、Linux、iOS、Android 和 Web，也可以按需连接本机 AI / MCP。详细操作请查看[中文用户指南](https://gomind.app/user-guide/zh-CN/)。
 
 ## License
 
-GoMind is proprietary software. The release files and product are provided under the applicable GoMind terms.
+GoMind is proprietary software. Release files and product usage are subject to the applicable GoMind terms.
